@@ -57,10 +57,10 @@
     flex-direction: column;
   }
   .home__image {
-    width: 90%;
+    width: 90vw;
   }
   .home__text {
-    width: 90%;
+    width: 90vw;
   }
 }
 @media (max-width: 435px) {
@@ -103,5 +103,21 @@
   }
   .home {
     margin-top: 5rem;
+  }
+}
+.carousel {
+  max-width: 45rem;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #dfdfdf;
+  display: none;
+}
+@media (max-width: 688px) {
+  .carousel {
+    max-width: 95vw;
+    width: 95vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
