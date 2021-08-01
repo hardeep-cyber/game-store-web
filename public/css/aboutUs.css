@@ -1,0 +1,36 @@
+.aboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 50rem; */
+}
+.card__area {
+  box-shadow: 2px 2px 50px #0f0f0f31;
+  border: 0px;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 45rem;
+}
+/* .card__heading {
+} */
+.card__heading h1 {
+  font-size: 2.5rem;
+}
+
+.card__heading h1 span {
+  font-size: 2.9rem;
+  color: #dc3545;
+}
+.card__body {
+  margin-top: 1.5rem;
+}
+.card__bodyText {
+  line-height: 1.5rem;
+  color: #6c757d;
+}
+@media (max-width: 688px) {
+  .card__area {
+    width: unset;
+    margin: 1rem;
+  }
+}

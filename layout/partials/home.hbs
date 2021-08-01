@@ -1,0 +1,28 @@
+<section class="home">
+    <div class="main">
+        <div class="home__text">
+            <h1 class="headingText">
+                The One Stop corner for your all favorite Games.
+            </h1>
+            <h6 class="subText">
+                Things are heating up with our Summer Sale! Save up to 75% on top titles and finish the season off
+                right.
+            </h6>
+            <button type="button" class="btn btn-danger btn-lg home__button" id="getStarted">Get Started</button>
+        </div>
+        <div class="home__image">
+            <img class="home__imageImg" src="./images/cars.png" alt="">
+        </div>
+    </div>
+    <script>
+        const isLoggedIn = {{ isLoggedIn }};
+        const getStarted = document.querySelector("#getStarted");
+        getStarted.addEventListener("click", () => {
+            if (isLoggedIn) {
+                window.scrollTo(0, document.body.scrollHeight);
+            } else {
+                window.location.replace("/signin");
+            }
+        });
+    </script>
+</section>

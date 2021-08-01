@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game store | Cart</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    {{>bootstrap}}
+    <link rel="stylesheet" href="./css/navBar.css">
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+<body>
+    <div class="container account-area">
+        <div class="card main-account-card">
+            <div class="card-header accountHeading">
+                <h1>
+                    <span>
+                        Your
+                    </span>
+                    Account
+                </h1>
+            </div>
+            <div class="card-body">
+                <div class="input-group mb-3">
+                    <label class="col-sm-2 col-form-label">Name</label>
+                    <div class="input-group row-sm-10">
+                        <h4>{{name}}</h4>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="col-sm-2 col-form-label">Gender</label>
+                    <div class="input-group row-sm-10">
+                        <h4>{{gender}}</h4>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                    <div class="input-group col-sm-10">
+                        <h4>{{email}}</h4>
+                    </div>
+                </div>
+                <div class="nav-area">
+                    <a href="/api/user/logout">
+                        <button type="button" class="btn btn-dark button">
+                            Log Out
+                        </button>
+                    </a>
+                    <a href="/api/user/delete">
+                        <button type="button" class="btn btn-dark linkButton">
+                            Delete Account
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cart-area">
+        <h1 class="sectionHeading">
+            <span>
+                Your
+            </span>
+            Carts
+        </h1>
+        <div class="main-cart-area" id="main-cart-area">
+            {{cartCards}}
+        </div>
+    </div>
+    {{>navBar}}
+    <script>
+        const mainCartArea = document.querySelector("#main-cart-area");
+        const cartCards = mainCartArea.innerText;
+        mainCartArea.innerHTML = cartCards;
+    </script>
+</body>
+
+</html>

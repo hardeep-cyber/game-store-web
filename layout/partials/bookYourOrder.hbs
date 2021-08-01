@@ -1,0 +1,46 @@
+<section class="bookYourOrder"  {{bookYourOrder}}>
+    <div class="card bookYourOrderCard">
+        <div class="card-header heading">
+            <h1>
+                <span>
+                    Book Your
+                </span>
+                Order
+            </h1>
+        </div>
+        <form class="card-body" id="AddToCart-form">
+            <div class="input-group mb-3">
+                <label for="productName" class="col-md-7 col-form-label form-label">Product Name</label>
+                <div class="input-group row-sm-10">
+                    <input name="productName" style="border-radius: 8px;" type="text" class="form-control"
+                        id="productName" placeholder="Enter your Product Name here...">
+                </div>
+                <label for="address" class="col-sm-2 col-form-label form-label">Address</label>
+                <div class="input-group row-sm-10">
+                    <input name="address" style="border-radius: 8px;" type="text" class="form-control" id="address"
+                        placeholder="Enter your Address here...">
+                </div>
+                <label for="otherDetails" class="col-md-2 col-form-label form-label">Other Details</label>
+                <div class="input-group row-sm-10">
+                    <textarea name="otherDetails" class="form-control" style="border-radius: 8px;" id="otherDetails"
+                        rows="5" placeholder="Enter your Other Details here..."></textarea>
+                </div>
+            </div>
+
+            <div class="SubmitNav">
+                <button type="Submit" class="btn btn-dark button" id="submit">Add to Cart</button>
+            </div>
+        </form>
+    </div>
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Alert</strong>
+                <button type="button" class="btn-close" id="close-button" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+            <div class="toast-body" style="font-weight: 600; font-size: 16px;" id="message">
+            </div>
+        </div>
+    </div>
+</section>

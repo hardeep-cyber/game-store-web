@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Game store | Buy your Perfect Game</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    {{>bootstrap}}
+    <link rel="stylesheet" href="./css/navBar.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/bookYourOrder.css">
+    <link rel="stylesheet" href="./css/aboutUs.css">
+</head>
+
+<body>
+    {{>navBar}}
+    {{>home}}
+    {{>bookYourOrder}}
+    {{>aboutUs}}
+    {{>contactUs}}
+    {{>contactInfo}}
+    {{>footer}}
+    <div style="opacity:0; display: none;" id="userId">{{userId}}</div>
+    <script src="./js/AddToCart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  display: grid;
+  place-items: center;
+}
+.main {
+  border: 0px;
+  padding: 10px;
+  border-radius: 12px;
+  width: 30rem;
+  box-shadow: 2px 2px 50px #0f0f0f31;
+}
+@media (max-width: 500px) {
+  body {
+    width: unset;
+  }
+  .main {
+    box-shadow: none;
+    padding: 0px;
+    width: unset;
+  }
+}
+.heading {
+  border: 0px;
+  background: transparent;
+  font-weight: 600;
+  padding: 17px 16px 0px;
+  color: #343a40;
+  display: flex;
+  align-items: center;
+}
+.heading h1 {
+  font-size: 2.5rem;
+  min-width: 8rem;
+}
+
+.heading h1 span {
+  font-size: 2.9rem;
+  color: #dc3545;
+}
+
+.button {
+  border-radius: 10px;
+  border: 4px solid #343a40;
+  font-weight: 600;
+  font-size: 17px;
+  margin-left: auto;
+  margin-top: 13px;
+}
+
+.nav {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.LinkButton {
+  font-weight: 600;
+  font-size: 17px;
+  border: 4px solid #e73d4e;
+  background: #c02c3b;
+  border-radius: 10px;
+}
+
+.divider {
+  background: #dc3545;
+  background: #cfcccc;
+  width: 2px;
+  height: 2rem;
+  margin: auto 17px;
+}
+
+.home_link {
+  text-decoration: none;
+  min-width: 8rem;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.game {
+  color: #dc3545;
+}
+
+.store {
+  color: #343a40;
+}
+@media (max-width: 400px) {
+  .divider {
+    margin: auto 10px;
+  }
+  .heading h1 span {
+    font-size: 2.4rem;
+    color: #dc3545;
+  }
+  .heading h1 {
+    font-size: 2.2rem;
+    min-width: 6rem;
+  }
+  .home_link {
+    text-decoration: none;
+    min-width: 7rem;
+  }
+}
+@media (max-width: 342px) {
+  .divider {
+    margin: auto 10px;
+  }
+  .heading h1 span {
+    font-size: 2rem;
+    color: #dc3545;
+  }
+  .heading h1 {
+    font-size: 1.8rem;
+    min-width: 6rem;
+  }
+  .home_link {
+    text-decoration: none;
+    min-width: 7rem;
+  }
+}
+.view-password-button {
+  width: 38px;
+  border: 0px;
+  height: 38px;
+  background: transparent;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  z-index: 60;
+}
+#view-confirmPassword-btn {
+  right: 0px;
+}
+#view-password-btn {
+  right: 50%;
+}

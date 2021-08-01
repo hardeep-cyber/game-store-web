@@ -1,0 +1,34 @@
+<footer>
+    <a href="/" class="nav__navigationA" style="text-decoration: none;">
+        <div class="nav__logo">
+            <span class="game">
+                Game
+            </span>
+            <span class="store">
+                Store ©
+            </span>
+            <span id="date" class="store">
+
+            </span>
+        </div>
+    </a>
+    <script>
+        const dateEl = document.querySelector("#date");
+        dateEl.innerText = new Date().getFullYear();
+    </script>
+    <style>
+        footer {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 2px 50px #0f0f0f31;
+            border: 0px;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 45rem;
+            margin-inline: auto;
+            margin-bottom: 0px;
+        }
+    </style>
+</footer>
