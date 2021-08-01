@@ -39,6 +39,7 @@
 
 .home__image {
   width: 45%;
+  margin-top: 5rem;
 }
 
 .home__imageImg {
@@ -77,7 +78,7 @@
 
 @media (min-width: 1700px) {
   .main {
-    margin: 500px;
+    /* margin: 0px; */
   }
   .home__text {
     width: 98rem;

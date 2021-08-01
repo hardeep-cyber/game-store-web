@@ -8,7 +8,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 3em 3em;
+  gap: 3em 0em;
 }
 
 .nav {
