@@ -81,7 +81,7 @@ h1.sectionHeading span {
   }
   .main-cart-card {
     margin: 0rem 0.7rem;
-    width: unset;
+    width: 90vw;
   }
 }
 .main-cart-area {
