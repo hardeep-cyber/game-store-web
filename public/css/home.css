@@ -114,8 +114,7 @@
 }
 @media (max-width: 688px) {
   .carousel {
-    max-width: 95vw;
-    width: 95vw;
+    max-width: 90vw;
     margin-left: 1rem;
     margin-right: 1rem;
   }
