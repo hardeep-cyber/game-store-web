@@ -12,12 +12,7 @@
 }
 
 @media (max-width: 688px) {
-  body {
-    width: unset;
-  }
   .bookYourOrderCard {
-    box-shadow: none;
-    padding: 0px;
     width: unset;
   }
 }
