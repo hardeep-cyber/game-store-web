@@ -111,7 +111,6 @@
   border-radius: 12px;
   overflow: hidden;
   background: #dfdfdf;
-  display: none;
 }
 @media (max-width: 688px) {
   .carousel {
