@@ -59,7 +59,7 @@ const initViewRoute = (app) => {
             </div>
           </div>
           <div class="input-group mb-3">
-            <label for="email" class="col-sm-2 col-form-label">Email</label>
+            <label for="email" class="col-sm-2 col-form-label">Other Details</label>
             <div class="input-group col-sm-10">
             <h5>${cart[index].otherDetails}</h5>
             </div>
