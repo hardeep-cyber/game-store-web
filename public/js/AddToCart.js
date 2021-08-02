@@ -4,6 +4,8 @@ const message = document.querySelector("#message");
 const closeButton = document.querySelector("#close-button");
 const userId = document.querySelector("#userId").innerText;
 
+liveToast.style.display = "none";
+
 const redirectToHomePage = () => {
   window.location.replace("/");
 };
@@ -53,11 +55,13 @@ addToCartForm.addEventListener("submit", async (event) => {
   ) {
     liveToast.classList.remove("hide");
     liveToast.classList.add("show");
+    liveToast.style.display = "block";
     message.innerText = "Please fill the form properly !";
     message.style.color = "#dc3545";
     setTimeout(() => {
       liveToast.classList.remove("show");
       liveToast.classList.add("hide");
+      liveToast.style.display = "none";
     }, 3000);
   } else {
     const res = await AddToCart(formValue, userId);
@@ -65,11 +69,13 @@ addToCartForm.addEventListener("submit", async (event) => {
 
     liveToast.classList.remove("hide");
     liveToast.classList.add("show");
+    liveToast.style.display = "block";
     message.innerText = res.message;
     message.style.color = "#20c997";
     setTimeout(() => {
       liveToast.classList.remove("show");
       liveToast.classList.add("hide");
+      liveToast.style.display = "none";
     }, 3000);
   }
 });
@@ -77,4 +83,5 @@ addToCartForm.addEventListener("submit", async (event) => {
 closeButton.addEventListener("click", () => {
   liveToast.classList.add("hide");
   liveToast.classList.remove("show");
+  liveToast.style.display = "none";
 });
