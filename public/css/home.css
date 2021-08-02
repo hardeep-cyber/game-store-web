@@ -1,3 +1,11 @@
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
 .home {
   display: flex;
   align-items: center;
